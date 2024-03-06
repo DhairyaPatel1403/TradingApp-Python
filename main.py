@@ -115,3 +115,43 @@ else:
 
 
     st.pyplot(fig)
+
+
+
+def calculate_profit(df, investment_date):
+    try:
+        investment_date = pd.to_datetime(investment_date)
+        investment_row = df[df['Date'] == investment_date]
+        if not investment_row.empty:
+            invested_price = investment_row.iloc[0]['Adj Close']
+            current_price = df.iloc[-1]['Adj Close']
+            shares_bought = 1  # Assuming buying 1 share
+            profit = (current_price - invested_price) * shares_bought
+            return profit
+        else:
+            return "Investment date not found in data."
+    except Exception as e:
+        return str(e)
+
+highest_price = df['Adj Close'].max()
+lowest_price = df['Adj Close'].min()
+
+# Calculate overall profit or loss
+profit_loss = df['Adj Close'].iloc[-1] - df['Adj Close'].iloc[0]
+
+# Display highest and lowest prices along with profit or loss
+st.write(f"Highest Price: {highest_price}")
+st.write(f"Lowest Price: {lowest_price}")
+st.write(f"Overall Profit/Loss: {profit_loss}")
+
+
+
+# Create a container for investment date input
+st.subheader("Check Profit on Investment Date")
+investment_date = st.date_input("Enter the investment date:")
+
+# Create a button to trigger profit calculation
+if st.button("Calculate Profit"):
+    if investment_date:
+        profit = calculate_profit(data, investment_date)
+        st.write(f"Profit Loss from your date : {profit}")
