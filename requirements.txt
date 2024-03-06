@@ -4,4 +4,4 @@ matplotlib
 mplfinance
 python-dotenv
 SQLAlchemy
-
+psycopg2-binary
