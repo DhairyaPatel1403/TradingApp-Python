@@ -1,8 +1,7 @@
 streamlit
 pandas
 matplotlib
-psycopg2
 mplfinance
 python-dotenv
 SQLAlchemy
-psycopg2-binary
+
