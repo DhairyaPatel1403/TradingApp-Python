@@ -13,7 +13,7 @@ The company's highest and lowest are also displayed along with net profit/loss.
 To run this project in your machine, do as followed:
 
 1. Install libraries - 
-  `pip install streamlit pandas matplotlib psycopg2 mplfinance`
+  `pip install streamlit pandas matplotlib psycopg2 mplfinance python-dotenv os sqlalchemy`
 
 2. In terminal, write the following to run the streamlit interface -
   streamlit run main.py
