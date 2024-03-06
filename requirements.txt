@@ -1,7 +1,8 @@
-streamlit==1.23.1
-pandas==2.0.2
-matplotlib==3.7.2
-psycopg2==2.9.9
-mplfinance==0.12.10b0
-python-dotenv==1.0.1
-SQLAlchemy==2.0.28
+streamlit
+pandas
+matplotlib
+psycopg2
+mplfinance
+python-dotenv
+SQLAlchemy
+
