@@ -1,13 +1,9 @@
 import os
 import pandas as pd
 from sqlalchemy import create_engine
-from dotenv import load_dotenv
-import os
 
-load_dotenv("connection.env")
-
-
-connection_string = os.getenv("CONNECTION_STRING")
+# Define your PostgreSQL connection string
+connection_string = "postgresql://DhairyaPatel1403:BY3CpiV1dUgD@ep-blue-pine-a4nxdtlt.us-east-1.aws.neon.tech/tradedata?sslmode=require"
 
 # Function to push data from CSV to PostgreSQL
 def push_csv_data_to_postgres(csv_file_path, connection_string):

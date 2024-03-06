@@ -6,10 +6,9 @@ import mplfinance as mpf
 from dotenv import load_dotenv
 import os
 
-load_dotenv("connection.env")
 
+connection_string = "postgresql://DhairyaPatel1403:BY3CpiV1dUgD@ep-blue-pine-a4nxdtlt.us-east-1.aws.neon.tech/tradedata?sslmode=require"
 
-connection_string = os.getenv("CONNECTION_STRING")
 
 def generate_signals(df):
     # Doing SMA
