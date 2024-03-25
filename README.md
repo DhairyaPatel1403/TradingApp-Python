@@ -22,4 +22,4 @@ To run this project in your machine, do as followed:
 
 
 
-AND IF YOU DONT WANT TO FOLLOW THESE STEPS, here's the link ;) - (https://tradester-tradeapp.streamlit.app/)https://tradester-tradeapp.streamlit.app/
+AND IF YOU DONT WANT TO FOLLOW THESE STEPS, here's the link ;) - (https://tradester-tradeapp.streamlit.app/)
